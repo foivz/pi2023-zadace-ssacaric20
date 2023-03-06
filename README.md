@@ -3,7 +3,6 @@
 (U redak iznad navedite naziv projekta koji ste dobili za analizu!)
 
 ## Podaci o studentu
-(Ispod promijenite samo drugi redak tablice!)
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
