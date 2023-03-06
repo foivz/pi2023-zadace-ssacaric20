@@ -7,7 +7,7 @@
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
+Sandra Sačarić | ssacaric20@foi.hr | 0016150340 | ssacaric20
 
 
 ## Opis domene
