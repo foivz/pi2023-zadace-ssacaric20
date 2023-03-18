@@ -1,5 +1,5 @@
 
-# Naziv projekta
+# Softver za praćenje rada obrta za usluge čišćenja
 (U redak iznad navedite naziv projekta koji ste dobili za analizu!)
 
 ## Podaci o studentu
