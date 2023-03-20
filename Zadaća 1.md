@@ -9,7 +9,7 @@ Sandra Sačarić | ssacaric20@foi.hr | 0016150340 | ssacaric20
 
 
 ## Opis domene
-Projekt se odnosi na softversko rješenje problema koje je izrazila vlasnica obrta za usluge čišćenja. Željela bi zamijeniti korištenje excel tablica softverom koji bi njoj i njenim zaposlenicima pomogao u praćenju rada.
+Projekt se odnosi na softversko rješenje problema koje je Zatražila vlasnica obrta za usluge čišćenja. Željela bi zamijeniti korištenje excel tablica softverom koji bi njoj i njenim zaposlenicima pomogao u praćenju rada. 
 
 ## Specifikacija projekta
 Zahtjevi se odnose na unos novih klijenata i zaposlenika, na pregled rasporeda, uređivanje rasporeda, autentifikaciju korisnika, i limitiranju mogućnosti pri korištenju aplikacije.
