@@ -31,12 +31,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            dgvZaposlenici = new DataGridView();
+            btnNew = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvZaposlenici).BeginInit();
+            SuspendLayout();
+            // 
+            // dgvZaposlenici
+            // 
+            dgvZaposlenici.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvZaposlenici.Location = new Point(37, 12);
+            dgvZaposlenici.Name = "dgvZaposlenici";
+            dgvZaposlenici.RowTemplate.Height = 25;
+            dgvZaposlenici.Size = new Size(998, 316);
+            dgvZaposlenici.TabIndex = 0;
+            // 
+            // btnNew
+            // 
+            btnNew.Location = new Point(960, 422);
+            btnNew.Name = "btnNew";
+            btnNew.Size = new Size(75, 23);
+            btnNew.TabIndex = 1;
+            btnNew.Text = "Add";
+            btnNew.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1077, 470);
+            Controls.Add(btnNew);
+            Controls.Add(dgvZaposlenici);
+            Name = "Form1";
+            Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)dgvZaposlenici).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dgvZaposlenici;
+        private Button btnNew;
     }
 }
