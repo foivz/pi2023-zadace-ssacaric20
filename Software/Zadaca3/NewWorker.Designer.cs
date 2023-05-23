@@ -53,6 +53,7 @@
             btnSave.TabIndex = 0;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // lblSurname
             // 
@@ -149,6 +150,7 @@
             btnCancel.TabIndex = 15;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // NewEntry
             // 
@@ -190,7 +192,11 @@
             Controls.Add(lblSurname);
             Controls.Add(lblName);
             Controls.Add(btnSave);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "NewWorker";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "NewWorker";
             ResumeLayout(false);
             PerformLayout();

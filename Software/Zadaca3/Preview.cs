@@ -6,5 +6,10 @@ namespace Zadaca3
         {
             InitializeComponent();
         }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

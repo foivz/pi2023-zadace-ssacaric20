@@ -53,15 +53,16 @@
             btnNew.TabIndex = 1;
             btnNew.Text = "Add";
             btnNew.UseVisualStyleBackColor = true;
+            btnNew.Click += btnNew_Click;
             // 
-            // Form1
+            // Preview
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1077, 470);
             Controls.Add(btnNew);
             Controls.Add(dgvZaposlenici);
-            Name = "Form1";
+            Name = "Preview";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dgvZaposlenici).EndInit();
             ResumeLayout(false);
