@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zadaca3.Models
+namespace Zadaca3.Repositories
 {
-    internal class Person
+    internal class WorkerRepository
     {
     }
 }
