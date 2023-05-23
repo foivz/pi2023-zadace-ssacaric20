@@ -1,8 +1,8 @@
 namespace Zadaca3
 {
-    public partial class Form1 : Form
+    public partial class Preview : Form
     {
-        public Form1()
+        public Preview()
         {
             InitializeComponent();
         }

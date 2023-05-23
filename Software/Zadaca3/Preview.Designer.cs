@@ -1,6 +1,6 @@
 ﻿namespace Zadaca3
 {
-    partial class Form1
+    partial class Preview
     {
         /// <summary>
         ///  Required designer variable.
