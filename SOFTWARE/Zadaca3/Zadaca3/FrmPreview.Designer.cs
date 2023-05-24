@@ -1,6 +1,6 @@
 ﻿namespace Zadaca3
 {
-    partial class Preview
+    partial class FrmPreview
     {
         /// <summary>
         /// Required designer variable.
@@ -62,6 +62,7 @@
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -88,7 +89,7 @@
             this.txtSearch.Size = new System.Drawing.Size(606, 20);
             this.txtSearch.TabIndex = 5;
             // 
-            // Preview
+            // FrmPreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,8 +100,9 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.dgvWorkers);
-            this.Name = "Preview";
+            this.Name = "FrmPreview";
             this.Text = "Preview workers";
+            this.Load += new System.EventHandler(this.FrmPreview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvWorkers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

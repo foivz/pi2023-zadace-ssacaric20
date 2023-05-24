@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Zadaca3
 {
-    public partial class NewWorkerForm : Form
+    public partial class FrmNewWorker : Form
     {
-        public NewWorkerForm()
+        public FrmNewWorker()
         {
             InitializeComponent();
         }
@@ -20,6 +20,16 @@ namespace Zadaca3
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

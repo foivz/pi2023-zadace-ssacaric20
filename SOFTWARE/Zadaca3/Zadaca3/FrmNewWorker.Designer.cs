@@ -1,6 +1,6 @@
 ﻿namespace Zadaca3
 {
-    partial class NewWorkerForm
+    partial class FrmNewWorker
     {
         /// <summary>
         /// Required designer variable.
@@ -150,6 +150,7 @@
             this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnEdit
             // 
@@ -168,6 +169,7 @@
             this.btnAdd.TabIndex = 14;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // NewWorkerForm
             // 

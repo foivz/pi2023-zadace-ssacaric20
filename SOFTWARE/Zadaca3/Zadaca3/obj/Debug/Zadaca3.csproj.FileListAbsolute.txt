@@ -1,0 +1,15 @@
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\obj\Debug\Zadaca3.csproj.AssemblyReference.cache
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\obj\Debug\Zadaca3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\obj\Debug\Zadaca3.Properties.Resources.resources
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\obj\Debug\Zadaca3.csproj.GenerateResource.cache
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\obj\Debug\Zadaca3.csproj.CoreCompileInputs.cache
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\bin\Debug\Zadaca3.exe.config
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\bin\Debug\Zadaca3.exe
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\bin\Debug\Zadaca3.pdb
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\bin\Debug\DBLayer.dll
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\obj\Debug\Zadaca3.frmPreview.resources
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\obj\Debug\Zadaca3.csproj.CopyComplete
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\obj\Debug\Zadaca3.exe
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\obj\Debug\Zadaca3.pdb
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\obj\Debug\Zadaca3.FrmLogin.resources
+C:\Users\Sandra\source\repos\pi2023-zadace-ssacaric20\Software\Zadaca3\Zadaca3\obj\Debug\Zadaca3.FrmNewWorker.resources
