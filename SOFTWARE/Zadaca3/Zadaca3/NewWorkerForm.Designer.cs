@@ -1,6 +1,6 @@
 ﻿namespace Zadaca3
 {
-    partial class Form1
+    partial class NewWorkerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,169 +28,169 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtSurname = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtCnumber = new System.Windows.Forms.TextBox();
+            this.txtIBAN = new System.Windows.Forms.TextBox();
+            this.txtHourly = new System.Windows.Forms.TextBox();
+            this.lblSurname = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblCnumber = new System.Windows.Forms.Label();
+            this.lblIBAN = new System.Windows.Forms.Label();
+            this.lblHourly = new System.Windows.Forms.Label();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name";
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(12, 16);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(35, 13);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Name";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(95, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtName.Location = new System.Drawing.Point(97, 13);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(199, 20);
+            this.txtName.TabIndex = 1;
             // 
-            // textBox2
+            // txtSurname
             // 
-            this.textBox2.Location = new System.Drawing.Point(95, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtSurname.Location = new System.Drawing.Point(97, 39);
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.Size = new System.Drawing.Size(199, 20);
+            this.txtSurname.TabIndex = 2;
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Location = new System.Drawing.Point(95, 65);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(201, 20);
-            this.textBox3.TabIndex = 3;
+            this.txtEmail.Location = new System.Drawing.Point(97, 65);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(199, 20);
+            this.txtEmail.TabIndex = 3;
             // 
-            // textBox4
+            // txtCnumber
             // 
-            this.textBox4.Location = new System.Drawing.Point(95, 91);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(201, 20);
-            this.textBox4.TabIndex = 4;
+            this.txtCnumber.Location = new System.Drawing.Point(97, 91);
+            this.txtCnumber.Name = "txtCnumber";
+            this.txtCnumber.Size = new System.Drawing.Size(199, 20);
+            this.txtCnumber.TabIndex = 4;
             // 
-            // textBox5
+            // txtIBAN
             // 
-            this.textBox5.Location = new System.Drawing.Point(95, 117);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(201, 20);
-            this.textBox5.TabIndex = 5;
+            this.txtIBAN.Location = new System.Drawing.Point(97, 117);
+            this.txtIBAN.Name = "txtIBAN";
+            this.txtIBAN.Size = new System.Drawing.Size(199, 20);
+            this.txtIBAN.TabIndex = 5;
             // 
-            // textBox6
+            // txtHourly
             // 
-            this.textBox6.Location = new System.Drawing.Point(95, 143);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(201, 20);
-            this.textBox6.TabIndex = 6;
+            this.txtHourly.Location = new System.Drawing.Point(97, 143);
+            this.txtHourly.Name = "txtHourly";
+            this.txtHourly.Size = new System.Drawing.Size(199, 20);
+            this.txtHourly.TabIndex = 6;
             // 
-            // label2
+            // lblSurname
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Surname";
+            this.lblSurname.AutoSize = true;
+            this.lblSurname.Location = new System.Drawing.Point(12, 42);
+            this.lblSurname.Name = "lblSurname";
+            this.lblSurname.Size = new System.Drawing.Size(49, 13);
+            this.lblSurname.TabIndex = 7;
+            this.lblSurname.Text = "Surname";
             // 
-            // label3
+            // lblEmail
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Email";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(12, 68);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.TabIndex = 8;
+            this.lblEmail.Text = "Email";
             // 
-            // label4
+            // lblCnumber
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 94);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Contact number";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lblCnumber.AutoSize = true;
+            this.lblCnumber.Location = new System.Drawing.Point(12, 94);
+            this.lblCnumber.Name = "lblCnumber";
+            this.lblCnumber.Size = new System.Drawing.Size(82, 13);
+            this.lblCnumber.TabIndex = 9;
+            this.lblCnumber.Text = "Contact number";
+            this.lblCnumber.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // lblIBAN
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 120);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "IBAN";
+            this.lblIBAN.AutoSize = true;
+            this.lblIBAN.Location = new System.Drawing.Point(12, 120);
+            this.lblIBAN.Name = "lblIBAN";
+            this.lblIBAN.Size = new System.Drawing.Size(32, 13);
+            this.lblIBAN.TabIndex = 10;
+            this.lblIBAN.Text = "IBAN";
             // 
-            // label6
+            // lblHourly
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 146);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Hourly rate";
+            this.lblHourly.AutoSize = true;
+            this.lblHourly.Location = new System.Drawing.Point(12, 146);
+            this.lblHourly.Name = "lblHourly";
+            this.lblHourly.Size = new System.Drawing.Size(58, 13);
+            this.lblHourly.TabIndex = 11;
+            this.lblHourly.Text = "Hourly rate";
             // 
-            // button1
+            // btnCancel
             // 
-            this.button1.Location = new System.Drawing.Point(15, 230);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCancel.Location = new System.Drawing.Point(15, 230);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 12;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnEdit
             // 
-            this.button2.Location = new System.Drawing.Point(140, 230);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEdit.Location = new System.Drawing.Point(140, 230);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.TabIndex = 13;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnAdd
             // 
-            this.button3.Location = new System.Drawing.Point(221, 230);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(221, 230);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 14;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // NewWorkerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(308, 265);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.lblHourly);
+            this.Controls.Add(this.lblIBAN);
+            this.Controls.Add(this.lblCnumber);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.lblSurname);
+            this.Controls.Add(this.txtHourly);
+            this.Controls.Add(this.txtIBAN);
+            this.Controls.Add(this.txtCnumber);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtSurname);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.lblName);
+            this.Name = "NewWorkerForm";
+            this.Text = "Add a new worker";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,20 +198,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtSurname;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtCnumber;
+        private System.Windows.Forms.TextBox txtIBAN;
+        private System.Windows.Forms.TextBox txtHourly;
+        private System.Windows.Forms.Label lblSurname;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblCnumber;
+        private System.Windows.Forms.Label lblIBAN;
+        private System.Windows.Forms.Label lblHourly;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
