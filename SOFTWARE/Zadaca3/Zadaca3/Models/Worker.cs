@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Zadaca3.Models
 {
-    internal class Worker
+    public class Worker : Person
     {
+        public int Hourly { get; set; }
     }
+
 }
