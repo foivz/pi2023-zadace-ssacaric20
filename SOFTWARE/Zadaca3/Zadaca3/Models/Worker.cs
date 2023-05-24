@@ -8,6 +8,9 @@ namespace Zadaca3.Models
 {
     public class Worker : Person
     {
+        public string Cnumber { get; set; }
+        public string Email { get; set; }
+        public string IBAN { get; set; }
         public int Hourly { get; set; }
     }
 

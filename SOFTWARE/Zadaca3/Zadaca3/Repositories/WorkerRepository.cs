@@ -53,12 +53,20 @@ namespace Zadaca3.Repositories
             int id = int.Parse(reader["Id"].ToString());
             string name = reader["Name"].ToString();
             string surname = reader["Surname"].ToString();
+            string email = reader["Email"].ToString();
+            string cnumber = reader["Cnumber"].ToString();
+            string iban = reader["IBAN"].ToString();
+            int hourly = int.Parse(reader["Hourly"].ToString());
 
             var worker = new Worker
             {
                 Id = id,
                 Name = name,
                 Surname = surname,
+                Email = email,
+                Cnumber = cnumber,
+                IBAN = iban,
+                Hourly = hourly
             };
 
             return worker;

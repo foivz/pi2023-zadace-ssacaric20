@@ -19,12 +19,6 @@ namespace Zadaca3
             InitializeComponent();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            FrmNewWorker frmNewWorker = new FrmNewWorker();
-            frmNewWorker.ShowDialog();
-        }
-
         private void FrmPreview_Load(object sender, EventArgs e)
         {
             ShowWorkers();
@@ -32,10 +26,32 @@ namespace Zadaca3
 
         private void ShowWorkers()
         {
-            List<WorkerRepository> workers = WorkerRepository.GetWorkers();
+            var workers = WorkerRepository.GetWorkers();
             dgvWorkers.DataSource = workers;
 
             dgvWorkers.Columns["Id"].DisplayIndex = 0;
+            dgvWorkers.Columns["Name"].DisplayIndex = 1;
+            dgvWorkers.Columns["Surname"].DisplayIndex = 2;
+            dgvWorkers.Columns["Email"].DisplayIndex = 3;
+            dgvWorkers.Columns["Cnumber"].DisplayIndex = 4;
+            dgvWorkers.Columns["IBAN"].DisplayIndex = 5;
+            dgvWorkers.Columns["Hourly"].DisplayIndex = 6;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            /*WorkerRepository selectedWorker = dgvWorkers.CurrentRow.DataBoundItem as Worker;
+            if (selectedWorker != null)
+            {
+                FrmEvaluation frmEvaluation = new FrmEvaluation(selectedStudent);
+                frmEvaluation.ShowDialog();
+            }
+        }
+
+        private void btnGenerateReport_Click(object sender, EventArgs e)
+        {
+            var form = new FrmFinalReport();
+            form.ShowDialog();*/
         }
     }
-}
+    }

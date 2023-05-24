@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DBLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,9 @@ namespace Zadaca3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            DB.SetConfiguration("IPS23_ssacaric20", "ssacaric20", "hO^SJK3G");
             Application.Run(new FrmLogin());
+            
         }
     }
 }
