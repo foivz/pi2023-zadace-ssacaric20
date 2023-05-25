@@ -34,20 +34,22 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblLogo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWorkers)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvWorkers
             // 
             this.dgvWorkers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvWorkers.Location = new System.Drawing.Point(12, 85);
+            this.dgvWorkers.Location = new System.Drawing.Point(134, 131);
             this.dgvWorkers.Name = "dgvWorkers";
             this.dgvWorkers.Size = new System.Drawing.Size(688, 251);
             this.dgvWorkers.TabIndex = 0;
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(13, 342);
+            this.btnEdit.Location = new System.Drawing.Point(135, 388);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 1;
@@ -56,7 +58,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(625, 415);
+            this.btnAdd.Location = new System.Drawing.Point(747, 388);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 2;
@@ -66,7 +68,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(94, 342);
+            this.btnDelete.Location = new System.Drawing.Point(216, 388);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 3;
@@ -76,7 +78,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(625, 56);
+            this.btnSearch.Location = new System.Drawing.Point(747, 102);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 4;
@@ -85,16 +87,38 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(13, 58);
+            this.txtSearch.Location = new System.Drawing.Point(134, 104);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(606, 20);
+            this.txtSearch.Size = new System.Drawing.Size(607, 20);
             this.txtSearch.TabIndex = 5;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(398, 8);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(161, 23);
+            this.lblTitle.TabIndex = 8;
+            this.lblTitle.Text = "Cleaning Business";
+            // 
+            // lblLogo
+            // 
+            this.lblLogo.AutoSize = true;
+            this.lblLogo.Font = new System.Drawing.Font("Pristina", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogo.Location = new System.Drawing.Point(12, 9);
+            this.lblLogo.Name = "lblLogo";
+            this.lblLogo.Size = new System.Drawing.Size(63, 21);
+            this.lblLogo.TabIndex = 7;
+            this.lblLogo.Text = "CleanView";
             // 
             // FrmPreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 450);
+            this.ClientSize = new System.Drawing.Size(956, 531);
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.lblLogo);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnDelete);
@@ -119,5 +143,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblLogo;
     }
 }

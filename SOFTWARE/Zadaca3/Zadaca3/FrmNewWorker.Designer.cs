@@ -43,12 +43,14 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.lblNewWorker = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(12, 16);
+            this.lblName.Location = new System.Drawing.Point(79, 90);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(35, 13);
             this.lblName.TabIndex = 0;
@@ -56,42 +58,42 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(97, 13);
+            this.txtName.Location = new System.Drawing.Point(167, 87);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(199, 20);
             this.txtName.TabIndex = 1;
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(97, 39);
+            this.txtSurname.Location = new System.Drawing.Point(167, 129);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(199, 20);
             this.txtSurname.TabIndex = 2;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(97, 65);
+            this.txtEmail.Location = new System.Drawing.Point(167, 171);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(199, 20);
             this.txtEmail.TabIndex = 3;
             // 
             // txtCnumber
             // 
-            this.txtCnumber.Location = new System.Drawing.Point(97, 91);
+            this.txtCnumber.Location = new System.Drawing.Point(167, 213);
             this.txtCnumber.Name = "txtCnumber";
             this.txtCnumber.Size = new System.Drawing.Size(199, 20);
             this.txtCnumber.TabIndex = 4;
             // 
             // txtIBAN
             // 
-            this.txtIBAN.Location = new System.Drawing.Point(97, 117);
+            this.txtIBAN.Location = new System.Drawing.Point(167, 255);
             this.txtIBAN.Name = "txtIBAN";
             this.txtIBAN.Size = new System.Drawing.Size(199, 20);
             this.txtIBAN.TabIndex = 5;
             // 
             // txtHourly
             // 
-            this.txtHourly.Location = new System.Drawing.Point(97, 143);
+            this.txtHourly.Location = new System.Drawing.Point(167, 297);
             this.txtHourly.Name = "txtHourly";
             this.txtHourly.Size = new System.Drawing.Size(199, 20);
             this.txtHourly.TabIndex = 6;
@@ -99,7 +101,7 @@
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
-            this.lblSurname.Location = new System.Drawing.Point(12, 42);
+            this.lblSurname.Location = new System.Drawing.Point(79, 132);
             this.lblSurname.Name = "lblSurname";
             this.lblSurname.Size = new System.Drawing.Size(49, 13);
             this.lblSurname.TabIndex = 7;
@@ -108,7 +110,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(12, 68);
+            this.lblEmail.Location = new System.Drawing.Point(79, 174);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(32, 13);
             this.lblEmail.TabIndex = 8;
@@ -117,7 +119,7 @@
             // lblCnumber
             // 
             this.lblCnumber.AutoSize = true;
-            this.lblCnumber.Location = new System.Drawing.Point(12, 94);
+            this.lblCnumber.Location = new System.Drawing.Point(79, 216);
             this.lblCnumber.Name = "lblCnumber";
             this.lblCnumber.Size = new System.Drawing.Size(82, 13);
             this.lblCnumber.TabIndex = 9;
@@ -127,7 +129,7 @@
             // lblIBAN
             // 
             this.lblIBAN.AutoSize = true;
-            this.lblIBAN.Location = new System.Drawing.Point(12, 120);
+            this.lblIBAN.Location = new System.Drawing.Point(79, 258);
             this.lblIBAN.Name = "lblIBAN";
             this.lblIBAN.Size = new System.Drawing.Size(32, 13);
             this.lblIBAN.TabIndex = 10;
@@ -136,7 +138,7 @@
             // lblHourly
             // 
             this.lblHourly.AutoSize = true;
-            this.lblHourly.Location = new System.Drawing.Point(12, 146);
+            this.lblHourly.Location = new System.Drawing.Point(79, 300);
             this.lblHourly.Name = "lblHourly";
             this.lblHourly.Size = new System.Drawing.Size(58, 13);
             this.lblHourly.TabIndex = 11;
@@ -144,7 +146,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(15, 230);
+            this.btnCancel.Location = new System.Drawing.Point(12, 375);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 12;
@@ -154,7 +156,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(140, 230);
+            this.btnEdit.Location = new System.Drawing.Point(276, 375);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 13;
@@ -163,7 +165,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(221, 230);
+            this.btnAdd.Location = new System.Drawing.Point(357, 375);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 14;
@@ -171,11 +173,31 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // lblNewWorker
+            // 
+            this.lblNewWorker.AutoSize = true;
+            this.lblNewWorker.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewWorker.Location = new System.Drawing.Point(180, 51);
+            this.lblNewWorker.Name = "lblNewWorker";
+            this.lblNewWorker.Size = new System.Drawing.Size(84, 18);
+            this.lblNewWorker.TabIndex = 15;
+            this.lblNewWorker.Text = "Worker data";
+            this.lblNewWorker.Click += new System.EventHandler(this.lblLogin_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(54, 36);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(336, 303);
+            this.panel1.TabIndex = 16;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
             // FrmNewWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 265);
+            this.ClientSize = new System.Drawing.Size(444, 410);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnCancel);
@@ -191,6 +213,8 @@
             this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblName);
+            this.Controls.Add(this.lblNewWorker);
+            this.Controls.Add(this.panel1);
             this.Name = "FrmNewWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add a new worker";
@@ -216,5 +240,7 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label lblNewWorker;
+        private System.Windows.Forms.Panel panel1;
     }
 }
