@@ -11,6 +11,8 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 
 using Zadaca3.Models;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Xml.Linq;
 
 namespace Zadaca3
 {
@@ -74,10 +76,11 @@ namespace Zadaca3
             if (selectedWorker != null)
             {
                 FrmNewWorker frmNewWorker = new FrmNewWorker(selectedWorker);
-
                 frmNewWorker.ChangeWorkerData();
 
                 frmNewWorker.ShowDialog();
+                ShowWorkers();
+
             }
         }
     }

@@ -83,7 +83,7 @@ namespace Zadaca3.Repositories
 
         public static void UpdateWorker(Worker worker, string name, string surname, string email, string cnumber, string iban, int hourly)
         {
-            string sql = $"UPDATE Workers SET Name = {name}, Surname = {surname}, Email = {email}, Cnumber = {cnumber}, IBAN = {iban}, Hourly = {hourly}, WHERE Id = {worker.Id}";
+            string sql = $"UPDATE Workers SET Name = '{name}', Surname = '{surname}', Email = '{email}', Cnumber = '{cnumber}', IBAN = '{iban}', Hourly = {hourly} WHERE Id = {worker.Id}";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
