@@ -217,6 +217,7 @@
             this.Name = "FrmNewWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add a new worker";
+            this.Load += new System.EventHandler(this.FrmNewWorker_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

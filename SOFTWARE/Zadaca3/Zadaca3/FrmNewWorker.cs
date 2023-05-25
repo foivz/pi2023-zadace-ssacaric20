@@ -17,9 +17,22 @@ namespace Zadaca3
     public partial class FrmNewWorker : Form
     {
 
+        public bool EditMode { get; set; }
+
         public FrmNewWorker()
         {
             InitializeComponent();
+        }
+
+        private void FrmNewWorker_Load(object sender, EventArgs e)
+        {
+            if (EditMode)
+            {
+                btnAdd.Enabled = false;
+            } else
+            {
+                btnEdit.Enabled = false;
+            }
         }
 
         private Worker worker;
