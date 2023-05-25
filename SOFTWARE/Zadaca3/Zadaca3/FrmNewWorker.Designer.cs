@@ -152,32 +152,35 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(12, 375);
+            this.btnCancel.BackColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(12, 396);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(276, 375);
+            this.btnEdit.BackColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(276, 396);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 13;
             this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(357, 375);
+            this.btnAdd.BackColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(357, 396);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 14;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lblNewWorker
@@ -185,7 +188,7 @@
             this.lblNewWorker.AutoSize = true;
             this.lblNewWorker.BackColor = System.Drawing.Color.Moccasin;
             this.lblNewWorker.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewWorker.Location = new System.Drawing.Point(178, 47);
+            this.lblNewWorker.Location = new System.Drawing.Point(178, 59);
             this.lblNewWorker.Name = "lblNewWorker";
             this.lblNewWorker.Size = new System.Drawing.Size(89, 17);
             this.lblNewWorker.TabIndex = 15;
@@ -206,7 +209,7 @@
             this.panel1.Controls.Add(this.lblEmail);
             this.panel1.Controls.Add(this.txtHourly);
             this.panel1.Controls.Add(this.lblSurname);
-            this.panel1.Location = new System.Drawing.Point(54, 32);
+            this.panel1.Location = new System.Drawing.Point(54, 44);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(336, 313);
             this.panel1.TabIndex = 16;
@@ -216,7 +219,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(444, 410);
+            this.ClientSize = new System.Drawing.Size(444, 431);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnCancel);

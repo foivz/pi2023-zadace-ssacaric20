@@ -36,6 +36,7 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblLogo = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWorkers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,7 +102,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(302, 8);
+            this.lblTitle.Location = new System.Drawing.Point(302, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(197, 26);
             this.lblTitle.TabIndex = 8;
@@ -117,11 +118,19 @@
             this.lblLogo.TabIndex = 7;
             this.lblLogo.Text = "CleanView";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Moccasin;
+            this.panel1.Location = new System.Drawing.Point(-2, 53);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(805, 362);
+            this.panel1.TabIndex = 9;
+            // 
             // FrmPreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(800, 469);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblLogo);
@@ -131,6 +140,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.dgvWorkers);
+            this.Controls.Add(this.panel1);
             this.Name = "FrmPreview";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Preview workers";
@@ -151,5 +161,6 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblLogo;
+        private System.Windows.Forms.Panel panel1;
     }
 }
