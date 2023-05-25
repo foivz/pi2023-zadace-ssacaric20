@@ -89,12 +89,12 @@ namespace Zadaca3
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string searchForTerm = txtSearch.Text;
+            string searchedTerm = txtSearch.Text;
 
-            var workers = WorkerRepository.SearchWorkers(searchForTerm);
+            var workers = WorkerRepository.SearchWorkers(searchedTerm);
             dgvWorkers.DataSource = workers;
 
-            WorkerRepository.SearchWorkers(searchForTerm);
+            WorkerRepository.SearchWorkers(searchedTerm);
         }
     }
 }

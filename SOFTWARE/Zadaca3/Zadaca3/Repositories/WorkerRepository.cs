@@ -73,11 +73,11 @@ namespace Zadaca3.Repositories
 
             return worker;
         }
-        public static List<Worker> SearchWorkers(string searchForTerm)
+        public static List<Worker> SearchWorkers(string searchedTerm)
         {
             var workers = new List<Worker>();
 
-            string sql = $"SELECT * FROM Workers WHERE Name LIKE '%{searchForTerm}%' OR Surname LIKE '%{searchForTerm}%' OR Email LIKE '%{searchForTerm}%' OR Cnumber LIKE '%{searchForTerm}%' OR Hourly LIKE '%{searchForTerm}%'";
+            string sql = $"SELECT * FROM Workers WHERE Name LIKE '%{searchedTerm}%' OR Surname LIKE '%{searchedTerm}%' OR Email LIKE '%{searchedTerm}%' OR Cnumber LIKE '%{searchedTerm}%' OR Hourly LIKE '%{searchedTerm}%'";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             while (reader.Read())
