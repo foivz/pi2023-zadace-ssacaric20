@@ -14,6 +14,8 @@ namespace Zadaca3
 {
     public partial class FrmNewWorker : Form
     {
+        public event EventHandler UpdatePreview;
+
         public FrmNewWorker()
         {
             InitializeComponent();
@@ -59,6 +61,8 @@ namespace Zadaca3
             owner.CheckWorker(SelectedWorker, name, surname, email, cnumber, iban, hourly);
 
             FrmPreview frmPreview = new FrmPreview();
+            UpdatePreview?.Invoke(this, EventArgs.Empty);
+
             this.Close();
         }
     }

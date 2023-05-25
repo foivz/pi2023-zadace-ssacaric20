@@ -42,7 +42,15 @@ namespace Zadaca3
         private void btnAdd_Click(object sender, EventArgs e)
         {
             var form = new FrmNewWorker();
+
+            form.UpdatePreview += FrmNewWorker_UpdatePreview;
+
             form.ShowDialog();
+        }
+
+        private void FrmNewWorker_UpdatePreview(object sender, EventArgs e)
+        {
+            ShowWorkers();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
