@@ -41,7 +41,10 @@
             // 
             // dgvWorkers
             // 
+            this.dgvWorkers.BackgroundColor = System.Drawing.Color.White;
+            this.dgvWorkers.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvWorkers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWorkers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvWorkers.Location = new System.Drawing.Point(56, 110);
             this.dgvWorkers.Name = "dgvWorkers";
             this.dgvWorkers.Size = new System.Drawing.Size(688, 251);
@@ -97,20 +100,20 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(320, 8);
+            this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(302, 8);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(161, 23);
+            this.lblTitle.Size = new System.Drawing.Size(197, 26);
             this.lblTitle.TabIndex = 8;
             this.lblTitle.Text = "Cleaning Business";
             // 
             // lblLogo
             // 
             this.lblLogo.AutoSize = true;
-            this.lblLogo.Font = new System.Drawing.Font("Pristina", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogo.Font = new System.Drawing.Font("Pristina", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogo.Location = new System.Drawing.Point(12, 9);
             this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(63, 21);
+            this.lblLogo.Size = new System.Drawing.Size(81, 27);
             this.lblLogo.TabIndex = 7;
             this.lblLogo.Text = "CleanView";
             // 
@@ -118,6 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ClientSize = new System.Drawing.Size(800, 469);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblLogo);

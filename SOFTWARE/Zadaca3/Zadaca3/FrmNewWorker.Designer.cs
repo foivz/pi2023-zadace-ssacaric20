@@ -51,96 +51,102 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Location = new System.Drawing.Point(24, 52);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
+            this.lblName.Size = new System.Drawing.Size(41, 15);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(112, 49);
+            this.txtName.Location = new System.Drawing.Point(124, 49);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(199, 20);
+            this.txtName.Size = new System.Drawing.Size(187, 20);
             this.txtName.TabIndex = 1;
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(112, 91);
+            this.txtSurname.Location = new System.Drawing.Point(124, 91);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(199, 20);
+            this.txtSurname.Size = new System.Drawing.Size(187, 20);
             this.txtSurname.TabIndex = 2;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(112, 133);
+            this.txtEmail.Location = new System.Drawing.Point(124, 133);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(199, 20);
+            this.txtEmail.Size = new System.Drawing.Size(187, 20);
             this.txtEmail.TabIndex = 3;
             // 
             // txtCnumber
             // 
-            this.txtCnumber.Location = new System.Drawing.Point(112, 175);
+            this.txtCnumber.Location = new System.Drawing.Point(124, 175);
             this.txtCnumber.Name = "txtCnumber";
-            this.txtCnumber.Size = new System.Drawing.Size(199, 20);
+            this.txtCnumber.Size = new System.Drawing.Size(187, 20);
             this.txtCnumber.TabIndex = 4;
             // 
             // txtIBAN
             // 
-            this.txtIBAN.Location = new System.Drawing.Point(112, 217);
+            this.txtIBAN.Location = new System.Drawing.Point(124, 217);
             this.txtIBAN.Name = "txtIBAN";
-            this.txtIBAN.Size = new System.Drawing.Size(199, 20);
+            this.txtIBAN.Size = new System.Drawing.Size(187, 20);
             this.txtIBAN.TabIndex = 5;
             // 
             // txtHourly
             // 
-            this.txtHourly.Location = new System.Drawing.Point(112, 259);
+            this.txtHourly.Location = new System.Drawing.Point(124, 259);
             this.txtHourly.Name = "txtHourly";
-            this.txtHourly.Size = new System.Drawing.Size(199, 20);
+            this.txtHourly.Size = new System.Drawing.Size(187, 20);
             this.txtHourly.TabIndex = 6;
             // 
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
+            this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSurname.Location = new System.Drawing.Point(24, 94);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(49, 13);
+            this.lblSurname.Size = new System.Drawing.Size(58, 15);
             this.lblSurname.TabIndex = 7;
             this.lblSurname.Text = "Surname";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(24, 136);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.Size = new System.Drawing.Size(39, 15);
             this.lblEmail.TabIndex = 8;
             this.lblEmail.Text = "Email";
             // 
             // lblCnumber
             // 
             this.lblCnumber.AutoSize = true;
+            this.lblCnumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCnumber.Location = new System.Drawing.Point(24, 178);
             this.lblCnumber.Name = "lblCnumber";
-            this.lblCnumber.Size = new System.Drawing.Size(82, 13);
+            this.lblCnumber.Size = new System.Drawing.Size(94, 15);
             this.lblCnumber.TabIndex = 9;
             this.lblCnumber.Text = "Contact number";
             // 
             // lblIBAN
             // 
             this.lblIBAN.AutoSize = true;
+            this.lblIBAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIBAN.Location = new System.Drawing.Point(24, 220);
             this.lblIBAN.Name = "lblIBAN";
-            this.lblIBAN.Size = new System.Drawing.Size(32, 13);
+            this.lblIBAN.Size = new System.Drawing.Size(34, 15);
             this.lblIBAN.TabIndex = 10;
             this.lblIBAN.Text = "IBAN";
             // 
             // lblHourly
             // 
             this.lblHourly.AutoSize = true;
+            this.lblHourly.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHourly.Location = new System.Drawing.Point(24, 262);
             this.lblHourly.Name = "lblHourly";
-            this.lblHourly.Size = new System.Drawing.Size(58, 13);
+            this.lblHourly.Size = new System.Drawing.Size(66, 15);
             this.lblHourly.TabIndex = 11;
             this.lblHourly.Text = "Hourly rate";
             // 
@@ -177,16 +183,17 @@
             // lblNewWorker
             // 
             this.lblNewWorker.AutoSize = true;
-            this.lblNewWorker.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewWorker.Location = new System.Drawing.Point(180, 47);
+            this.lblNewWorker.BackColor = System.Drawing.Color.Moccasin;
+            this.lblNewWorker.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewWorker.Location = new System.Drawing.Point(178, 47);
             this.lblNewWorker.Name = "lblNewWorker";
-            this.lblNewWorker.Size = new System.Drawing.Size(84, 18);
+            this.lblNewWorker.Size = new System.Drawing.Size(89, 17);
             this.lblNewWorker.TabIndex = 15;
             this.lblNewWorker.Text = "Worker data";
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BackColor = System.Drawing.Color.Moccasin;
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.lblName);
             this.panel1.Controls.Add(this.txtName);
@@ -208,6 +215,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(444, 410);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEdit);
