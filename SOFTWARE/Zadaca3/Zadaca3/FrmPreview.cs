@@ -19,7 +19,7 @@ namespace Zadaca3
     public partial class FrmPreview : Form
     {
 
-        private bool EditMode = false;
+        private bool EnableEditButton = false;
 
         public FrmPreview()
         {
@@ -48,7 +48,7 @@ namespace Zadaca3
         private void btnAdd_Click(object sender, EventArgs e)
         {
             FrmNewWorker frmNewWorker = new FrmNewWorker();
-            frmNewWorker.EditMode = false;
+            frmNewWorker.EnableEditButton = false;
 
             frmNewWorker.ShowDialog();
             ShowWorkers();
@@ -80,7 +80,7 @@ namespace Zadaca3
             if (selectedWorker != null)
             {
                 FrmNewWorker frmNewWorker = new FrmNewWorker(selectedWorker);
-                frmNewWorker.EditMode = true;
+                frmNewWorker.EnableEditButton = true;
                 frmNewWorker.ChangeWorkerData();
 
                 frmNewWorker.ShowDialog();

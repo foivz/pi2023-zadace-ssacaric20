@@ -17,7 +17,7 @@ namespace Zadaca3
     public partial class FrmNewWorker : Form
     {
 
-        public bool EditMode { get; set; }
+        public bool EnableEditButton { get; set; }
 
         public FrmNewWorker()
         {
@@ -26,7 +26,7 @@ namespace Zadaca3
 
         private void FrmNewWorker_Load(object sender, EventArgs e)
         {
-            if (EditMode)
+            if (EnableEditButton)
             {
                 btnAdd.Enabled = false;
             } else
