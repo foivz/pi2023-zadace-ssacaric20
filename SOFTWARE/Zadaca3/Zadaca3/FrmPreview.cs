@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Zadaca3.Models;
 
 namespace Zadaca3
 {
@@ -42,6 +43,21 @@ namespace Zadaca3
         {
             var form = new FrmNewWorker();
             form.ShowDialog();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Worker selectedWorker = dgvWorkers.CurrentRow.DataBoundItem as Worker;
+            if (selectedWorker != null)
+            {
+                DialogResult dialogResult = MessageBox.Show(string.Format("Are you sure you would like to delete this worker from the database {0} {1}?", selectedWorker.Name, selectedWorker.Surname), "Deleting", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Owner owner = new Owner();
+                    owner.DeleteWorker(selectedWorker.Id);
+                    ShowWorkers();
+                }
+            }
         }
     }
 }
