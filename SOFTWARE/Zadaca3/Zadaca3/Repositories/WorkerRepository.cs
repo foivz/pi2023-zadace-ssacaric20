@@ -6,6 +6,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Zadaca3.Models;
 
 namespace Zadaca3.Repositories
@@ -72,6 +73,25 @@ namespace Zadaca3.Repositories
 
             return worker;
         }
+        public static List<Worker> SearchWorkers(string searchForTerm)
+        {
+            var workers = new List<Worker>();
+
+            string sql = $"SELECT * FROM Workers WHERE Name LIKE '%{searchForTerm}%' OR Surname LIKE '%{searchForTerm}%' OR Email LIKE '%{searchForTerm}%' OR Cnumber LIKE '%{searchForTerm}%' OR Hourly LIKE '%{searchForTerm}%'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Worker worker = CreateObject(reader);
+                workers.Add(worker);
+            }
+
+            reader.Close();
+            DB.CloseConnection();
+
+            return workers;
+        }
+
         public static void InsertWorker(string name, string surname, string email, string cnumber, string iban, int hourly)
         {
             string sql = $"INSERT INTO Workers (Name, Surname, Email, Cnumber, IBAN, Hourly) VALUES ('" + name + "','" + surname + "','" + email + "','" + cnumber + "','" + iban + "','" + hourly + "')";

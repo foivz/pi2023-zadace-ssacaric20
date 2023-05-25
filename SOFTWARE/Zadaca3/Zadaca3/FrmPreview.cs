@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-
 using Zadaca3.Models;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Xml.Linq;
@@ -18,7 +17,6 @@ namespace Zadaca3
 {
     public partial class FrmPreview : Form
     {
-
         private bool EnableEditButton = false;
 
         public FrmPreview()
@@ -87,6 +85,16 @@ namespace Zadaca3
                 ShowWorkers();
 
             }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string searchForTerm = txtSearch.Text;
+
+            var workers = WorkerRepository.SearchWorkers(searchForTerm);
+            dgvWorkers.DataSource = workers;
+
+            WorkerRepository.SearchWorkers(searchForTerm);
         }
     }
 }
