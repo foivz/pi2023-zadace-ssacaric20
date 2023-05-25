@@ -56,7 +56,7 @@ namespace Zadaca3
 
             Owner owner = new Owner();
 
-            /*owner.CheckWorker(name, surname, email, cnumber, iban, cnumber, hourly, SelectedWorker);*/
+            owner.CheckWorker(SelectedWorker, name, surname, email, cnumber, iban, hourly);
 
             FrmPreview frmPreview = new FrmPreview();
             this.Close();
