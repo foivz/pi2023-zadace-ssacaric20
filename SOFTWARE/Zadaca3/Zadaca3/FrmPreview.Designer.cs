@@ -42,23 +42,24 @@
             // dgvWorkers
             // 
             this.dgvWorkers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvWorkers.Location = new System.Drawing.Point(134, 131);
+            this.dgvWorkers.Location = new System.Drawing.Point(56, 110);
             this.dgvWorkers.Name = "dgvWorkers";
             this.dgvWorkers.Size = new System.Drawing.Size(688, 251);
             this.dgvWorkers.TabIndex = 0;
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(135, 388);
+            this.btnEdit.Location = new System.Drawing.Point(57, 367);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(747, 388);
+            this.btnAdd.Location = new System.Drawing.Point(669, 367);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 2;
@@ -68,7 +69,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(216, 388);
+            this.btnDelete.Location = new System.Drawing.Point(138, 367);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 3;
@@ -78,7 +79,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(747, 102);
+            this.btnSearch.Location = new System.Drawing.Point(669, 81);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 4;
@@ -87,7 +88,7 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(134, 104);
+            this.txtSearch.Location = new System.Drawing.Point(56, 83);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(607, 20);
             this.txtSearch.TabIndex = 5;
@@ -96,7 +97,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(398, 8);
+            this.lblTitle.Location = new System.Drawing.Point(320, 8);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(161, 23);
             this.lblTitle.TabIndex = 8;
@@ -116,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 531);
+            this.ClientSize = new System.Drawing.Size(800, 469);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblLogo);
             this.Controls.Add(this.txtSearch);

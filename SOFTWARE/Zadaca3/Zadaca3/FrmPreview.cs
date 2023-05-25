@@ -44,9 +44,8 @@ namespace Zadaca3
         {
             var form = new FrmNewWorker();
 
-            form.UpdateFrmPreview += FrmNewWorker_UpdateFrmPreview;
-
             form.ShowDialog();
+            ShowWorkers();
         }
 
         private void FrmNewWorker_UpdateFrmPreview(object sender, EventArgs e)
@@ -66,6 +65,19 @@ namespace Zadaca3
                     owner.DeleteWorker(selectedWorker.Id);
                     ShowWorkers();
                 }
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            Worker selectedWorker = dgvWorkers.CurrentRow.DataBoundItem as Worker;
+            if (selectedWorker != null)
+            {
+                FrmNewWorker frmNewWorker = new FrmNewWorker(selectedWorker);
+
+                frmNewWorker.ChangeWorkerData();
+
+                frmNewWorker.ShowDialog();
             }
         }
     }

@@ -14,7 +14,6 @@ namespace Zadaca3
 {
     public partial class FrmNewWorker : Form
     {
-        public event EventHandler UpdateFrmPreview;
 
         public FrmNewWorker()
         {
@@ -37,11 +36,6 @@ namespace Zadaca3
             }
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Close();
@@ -61,17 +55,21 @@ namespace Zadaca3
             owner.CheckWorker(SelectedWorker, name, surname, email, cnumber, iban, hourly);
 
             FrmPreview frmPreview = new FrmPreview();
-            UpdateFrmPreview?.Invoke(this, EventArgs.Empty);
 
             this.Close();
         }
 
-        private void lblLogin_Click(object sender, EventArgs e)
+        public void ChangeWorkerData()
         {
-
+            txtName.Text = SelectedWorker.Name.ToString();
+            txtSurname.Text = SelectedWorker.Surname.ToString();
+            txtEmail.Text = SelectedWorker.Email.ToString();
+            txtCnumber.Text = SelectedWorker.Cnumber.ToString();
+            txtIBAN.Text = SelectedWorker.IBAN.ToString();
+            txtHourly.Text = SelectedWorker.Hourly.ToString();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnEdit_Click(object sender, EventArgs e)
         {
 
         }

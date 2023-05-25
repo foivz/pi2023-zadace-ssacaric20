@@ -45,7 +45,7 @@
             this.btnLogin.Location = new System.Drawing.Point(114, 125);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(87, 23);
-            this.btnLogin.TabIndex = 0;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Enter";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -73,7 +73,7 @@
             this.txtPassword.Location = new System.Drawing.Point(181, 144);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(223, 20);
-            this.txtPassword.TabIndex = 3;
+            this.txtPassword.TabIndex = 1;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUsername
@@ -81,7 +81,7 @@
             this.txtUsername.Location = new System.Drawing.Point(181, 109);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(223, 20);
-            this.txtUsername.TabIndex = 4;
+            this.txtUsername.TabIndex = 0;
             // 
             // lblLogo
             // 

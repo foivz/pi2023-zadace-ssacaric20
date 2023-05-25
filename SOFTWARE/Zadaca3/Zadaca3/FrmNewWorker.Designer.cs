@@ -45,12 +45,13 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.lblNewWorker = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(79, 90);
+            this.lblName.Location = new System.Drawing.Point(24, 52);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(35, 13);
             this.lblName.TabIndex = 0;
@@ -58,42 +59,42 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(167, 87);
+            this.txtName.Location = new System.Drawing.Point(112, 49);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(199, 20);
             this.txtName.TabIndex = 1;
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(167, 129);
+            this.txtSurname.Location = new System.Drawing.Point(112, 91);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(199, 20);
             this.txtSurname.TabIndex = 2;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(167, 171);
+            this.txtEmail.Location = new System.Drawing.Point(112, 133);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(199, 20);
             this.txtEmail.TabIndex = 3;
             // 
             // txtCnumber
             // 
-            this.txtCnumber.Location = new System.Drawing.Point(167, 213);
+            this.txtCnumber.Location = new System.Drawing.Point(112, 175);
             this.txtCnumber.Name = "txtCnumber";
             this.txtCnumber.Size = new System.Drawing.Size(199, 20);
             this.txtCnumber.TabIndex = 4;
             // 
             // txtIBAN
             // 
-            this.txtIBAN.Location = new System.Drawing.Point(167, 255);
+            this.txtIBAN.Location = new System.Drawing.Point(112, 217);
             this.txtIBAN.Name = "txtIBAN";
             this.txtIBAN.Size = new System.Drawing.Size(199, 20);
             this.txtIBAN.TabIndex = 5;
             // 
             // txtHourly
             // 
-            this.txtHourly.Location = new System.Drawing.Point(167, 297);
+            this.txtHourly.Location = new System.Drawing.Point(112, 259);
             this.txtHourly.Name = "txtHourly";
             this.txtHourly.Size = new System.Drawing.Size(199, 20);
             this.txtHourly.TabIndex = 6;
@@ -101,7 +102,7 @@
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
-            this.lblSurname.Location = new System.Drawing.Point(79, 132);
+            this.lblSurname.Location = new System.Drawing.Point(24, 94);
             this.lblSurname.Name = "lblSurname";
             this.lblSurname.Size = new System.Drawing.Size(49, 13);
             this.lblSurname.TabIndex = 7;
@@ -110,7 +111,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(79, 174);
+            this.lblEmail.Location = new System.Drawing.Point(24, 136);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(32, 13);
             this.lblEmail.TabIndex = 8;
@@ -119,17 +120,16 @@
             // lblCnumber
             // 
             this.lblCnumber.AutoSize = true;
-            this.lblCnumber.Location = new System.Drawing.Point(79, 216);
+            this.lblCnumber.Location = new System.Drawing.Point(24, 178);
             this.lblCnumber.Name = "lblCnumber";
             this.lblCnumber.Size = new System.Drawing.Size(82, 13);
             this.lblCnumber.TabIndex = 9;
             this.lblCnumber.Text = "Contact number";
-            this.lblCnumber.Click += new System.EventHandler(this.label4_Click);
             // 
             // lblIBAN
             // 
             this.lblIBAN.AutoSize = true;
-            this.lblIBAN.Location = new System.Drawing.Point(79, 258);
+            this.lblIBAN.Location = new System.Drawing.Point(24, 220);
             this.lblIBAN.Name = "lblIBAN";
             this.lblIBAN.Size = new System.Drawing.Size(32, 13);
             this.lblIBAN.TabIndex = 10;
@@ -138,7 +138,7 @@
             // lblHourly
             // 
             this.lblHourly.AutoSize = true;
-            this.lblHourly.Location = new System.Drawing.Point(79, 300);
+            this.lblHourly.Location = new System.Drawing.Point(24, 262);
             this.lblHourly.Name = "lblHourly";
             this.lblHourly.Size = new System.Drawing.Size(58, 13);
             this.lblHourly.TabIndex = 11;
@@ -162,6 +162,7 @@
             this.btnEdit.TabIndex = 13;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 
@@ -177,21 +178,31 @@
             // 
             this.lblNewWorker.AutoSize = true;
             this.lblNewWorker.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewWorker.Location = new System.Drawing.Point(180, 51);
+            this.lblNewWorker.Location = new System.Drawing.Point(180, 47);
             this.lblNewWorker.Name = "lblNewWorker";
             this.lblNewWorker.Size = new System.Drawing.Size(84, 18);
             this.lblNewWorker.TabIndex = 15;
             this.lblNewWorker.Text = "Worker data";
-            this.lblNewWorker.Click += new System.EventHandler(this.lblLogin_Click);
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(54, 36);
+            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.lblName);
+            this.panel1.Controls.Add(this.txtName);
+            this.panel1.Controls.Add(this.lblHourly);
+            this.panel1.Controls.Add(this.txtSurname);
+            this.panel1.Controls.Add(this.lblIBAN);
+            this.panel1.Controls.Add(this.txtCnumber);
+            this.panel1.Controls.Add(this.lblCnumber);
+            this.panel1.Controls.Add(this.txtIBAN);
+            this.panel1.Controls.Add(this.lblEmail);
+            this.panel1.Controls.Add(this.txtHourly);
+            this.panel1.Controls.Add(this.lblSurname);
+            this.panel1.Location = new System.Drawing.Point(54, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(336, 303);
+            this.panel1.Size = new System.Drawing.Size(336, 313);
             this.panel1.TabIndex = 16;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // FrmNewWorker
             // 
@@ -201,23 +212,13 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.lblHourly);
-            this.Controls.Add(this.lblIBAN);
-            this.Controls.Add(this.lblCnumber);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblSurname);
-            this.Controls.Add(this.txtHourly);
-            this.Controls.Add(this.txtIBAN);
-            this.Controls.Add(this.txtCnumber);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtSurname);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblNewWorker);
             this.Controls.Add(this.panel1);
             this.Name = "FrmNewWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add a new worker";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
