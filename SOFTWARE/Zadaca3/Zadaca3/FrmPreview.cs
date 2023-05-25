@@ -40,18 +40,8 @@ namespace Zadaca3
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            /*WorkerRepository selectedWorker = dgvWorkers.CurrentRow.DataBoundItem as Worker;
-            if (selectedWorker != null)
-            {
-                FrmEvaluation frmEvaluation = new FrmEvaluation(selectedStudent);
-                frmEvaluation.ShowDialog();
-            }
-        }
-
-        private void btnGenerateReport_Click(object sender, EventArgs e)
-        {
-            var form = new FrmFinalReport();
-            form.ShowDialog();*/
+            var form = new FrmNewWorker();
+            form.ShowDialog();
         }
     }
-    }
+}

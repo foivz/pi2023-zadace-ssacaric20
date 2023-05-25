@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Zadaca3.Models;
@@ -70,6 +71,29 @@ namespace Zadaca3.Repositories
             };
 
             return worker;
+        }
+        public static void InsertWorker(string name, string surname, string email, string cnumber, string iban, int hourly)
+        {
+            string sql = $"INSERT INTO Workers (Name, Surname, Email, Cnumber, IBAN, Hourly) VALUES ('" + name + "','" + surname + "','" + email + "','" + cnumber + "','" + iban + "','" + hourly + "')";
+
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
+        public static void UpdateWorker(Worker worker, string name, string surname, string email, string cnumber, string iban, int hourly)
+        {
+            string sql = $"UPDATE Workers SET Name = {name}, Surname = {surname}, Email = {email}, Cnumber = {cnumber}, IBAN = {iban}, Hourly = {hourly}, WHERE Id = {worker.Id}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+        public static void DeleteWorker(int selectedWorker)
+        {
+            string sql = $"DELETE FROM Workers WHERE Id= '" + selectedWorker + "' ";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
         }
     }
 }

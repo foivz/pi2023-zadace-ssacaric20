@@ -101,6 +101,7 @@
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.dgvWorkers);
             this.Name = "FrmPreview";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Preview workers";
             this.Load += new System.EventHandler(this.FrmPreview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvWorkers)).EndInit();

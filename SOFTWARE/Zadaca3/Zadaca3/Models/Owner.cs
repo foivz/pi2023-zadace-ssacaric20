@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zadaca3.Models
 {
-    public class Teacher : Person
+    public class Owner : Person
     {
         public string Username { get; set; }
         public string Password { get; set; }

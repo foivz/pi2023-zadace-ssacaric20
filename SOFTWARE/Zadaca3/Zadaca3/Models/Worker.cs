@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Zadaca3.Repositories;
 
 namespace Zadaca3.Models
 {
@@ -13,5 +14,4 @@ namespace Zadaca3.Models
         public string IBAN { get; set; }
         public int Hourly { get; set; }
     }
-
 }
