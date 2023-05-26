@@ -24,7 +24,7 @@ namespace Zadaca3
         {
             if (txtUsername.Text == "")
             {
-                MessageBox.Show("You must unter a username to login.", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You must enter a username to login.", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             } else if (txtPassword.Text == "")
             {
                 MessageBox.Show("You must enter a password to login.", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);

@@ -13,24 +13,6 @@ namespace Zadaca3.Repositories
 {
     public class WorkerRepository
     {
-        public static Worker GetWorker(int id)
-        {
-            Worker worker = null;
-
-            string sql = $"SELECT * FROM Workers WHERE Id = {id}";
-            DB.OpenConnection();
-            var reader = DB.GetDataReader(sql);
-            if (reader.HasRows)
-            {
-                reader.Read();
-                worker = CreateObject(reader);
-                reader.Close();
-            }
-
-            DB.CloseConnection();
-            return worker;
-        }
-
         public static List<Worker> GetWorkers()
         {
             var workers = new List<Worker>();
